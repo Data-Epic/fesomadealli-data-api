@@ -1,0 +1,27 @@
+[project]
+name = "data-api"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "fesomadealli",email = "fesomade.alli@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "polars[all] (>=1.23.0,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "polars-lts-cpu (>=1.23.0,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "fastapi[all] (>=0.115.9,<0.116.0)"
+]
+
+[tool.poetry]
+packages = [{include = "data_api", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
