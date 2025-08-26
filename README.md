@@ -1,5 +1,5 @@
 ## Project: Data Processing API
-Goal:
+### Goal:
 Build a FastAPI-based web service that processes large datasets using Polars and Pandas. The service should:
 
 Load, clean, and aggregate data.
@@ -35,44 +35,53 @@ API Documentation: Use Swagger UI (/docs) for interactive testing.
 
 ## Tasks
 
-Task 1: Set Up Environment
-Initialize a Python project using Poetry.
-Set up a virtual environment (venv) and install FastAPI, Polars, Pandas.
-Task 2: Data Loading
-Create a script to load http://archive.ics.uci.edu/dataset/502/online+retail+ii.
-Implement functions to read datasets using both Pandas and Polars.
-Compare loading times and document findings by creating a benchmark function that returns;
-data loading time
-aggregation time.
+### Task 1: Set Up Environment
+- Initialize a Python project using Poetry.
+- Set up a virtual environment (venv) and install FastAPI, Polars, Pandas.
+
+### Task 2: Data Loading
+- Create a script to load http://archive.ics.uci.edu/dataset/502/online+retail+ii.
+- Implement functions to read datasets using both Pandas and Polars.
+- Compare loading times and document findings by creating a benchmark function that returns:
+      - data loading time
+      - aggregation time.
+
 Feel free to add any additional metrics you find interesting.
 
-Task 3: Data Cleaning
-Implement functions to handle missing values (e.g., fill with mean, drop rows).
-Apply cleaning transformations using Pandas and Polars.
-Document data cleaning process and reason behind your methodology.
+### Task 3: Data Cleaning
+- Implement functions to handle missing values (e.g., fill with mean, drop rows).
+- Apply cleaning transformations using Pandas and Polars.
+- Document data cleaning process and reason behind your methodology.
+
 Task 4: Data Aggregation
-Group dataset by a categorical column (e.g., category).
-Compute mean, sum, count for a numeric column.
-Implement aggregation using both Pandas and Polars.
-Expose results via a FastAPI endpoint (/aggregate).
+- Group dataset by a categorical column (e.g., category).
+- Compute mean, sum, count for a numeric column.
+- Implement aggregation using both Pandas and Polars.
+- Expose results via a FastAPI endpoint (/aggregate).
+
 Task 5: API Integration
-Create a /process-data endpoint.
+- Create a /process-data endpoint.
+
 This endpoint should:
-Load dataset
-Clean and aggregate data
-Return processed results in JSON format.
-Implement error handling for invalid input formats.
+- Load dataset
+- Clean and aggregate data
+- Return processed results in JSON format.
+- Implement error handling for invalid input formats.
+
 Task 6: Saving and Retrieving Processed Data
-Save processed data in JSON and Parquet formats.
-Implement API endpoints to download these files (/download-json, /download-parquet).
-Deadline
+- Save processed data in JSON and Parquet formats.
+- Implement API endpoints to download these files (/download-json, /download-parquet).
+
+### Deadline
 The project should be submitted by Friday, February 28th, 2025, 11:59 PM.
 Submission
 Share your PR in the task-submission channel and tag your mentors.
 GitHub Repository: https://github.com/Data-Epic/data-wrangling/
-Rubrics
-Completeness: All parts of the task are implemented and working.
-Code Quality: Code is clean, well-documented, and follows best practices.
-Testing: Unit tests are comprehensive and cover edge cases.
+
+### Rubrics
+- Completeness: All parts of the task are implemented and working.
+- Code Quality: Code is clean, well-documented, and follows best practices.
+- Testing: Unit tests are comprehensive and cover edge cases.
 Git Usage: Proper use of Git for version control, with meaningful commit messages.
+
 Good luck, and happy coding! 🚀
